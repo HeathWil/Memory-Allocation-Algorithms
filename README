@@ -1,0 +1,25 @@
+NAME:
+        Project 2
+AUTHOR:
+        Heather Wilson
+DESCRIPTION:
+        This program's purpose is to allocate memory in a variety of ways. We use different algorithms
+        to complete the memory allocation. Algorithms displayed in this program include: Bestfit, Nextfit,
+        Firstfit, and Buddy. Bestfit works by checking the whole block to find either the exact size of
+        free memory available equal to the incoming process, or the closest size to it and inserting the
+        process there. Nextfit keeps track of where the previous process was allocated, and finds the
+        next available space with enough size and allocates the process there. Firstfit works by scanning
+        through the block and finding the first space available that can fit the process and allocating
+        it there. The Buddy system works by, theoretically, splitting the block in two, and thinking of
+        it as two halves. From there, memory is stored by powers of 2 that can hold the whole process
+        size.
+COMMANDS:
+        BUDDY N text.txt- Buddy algorithm, size N, textfile
+        NEXTFIT N text.txt-Nextfit algorithm, size N, textfile
+        FIRSTFIT N text.txt-Firstfit algorithm, size N, textfile
+        BESTFIT N text.txt-Bestfit algorithm, size N, textfile
+        REQUEST process size- create new process, name, and size
+        RELEASE process-release process from block, name
+        LIST AVAILABLE-lists available space
+        LIST ASSIGNED-lists assigned space
+        FIND process-finds a process
